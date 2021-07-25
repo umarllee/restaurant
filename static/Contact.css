@@ -1,0 +1,151 @@
+body{
+    background: #4b4b4b;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1400px 660px;
+    font-size: 140%;
+    color: #fff;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 10px 0 0 20px;
+ }
+ img:hover{
+     width: 75px;
+     height: 75px;
+     transition: 0.4s;
+ }
+ 
+ .Welcome{
+     width: 150px;
+     height: 70px;
+     padding: 20px 0 0 0;
+     float: left;
+     text-shadow: 5px 3px 1px black;
+     color:#fc0;
+     font-size: 37px;
+     font-weight: 800;
+     text-decoration: none;
+ }
+ 
+ .Welcome:hover{
+     font-size: 40px;
+     transition: 0.4s;
+     color: #fff;
+ }
+ 
+ #Icon_Welcome{
+     width: 98.5%;
+     height: 95px;
+     float: left;
+     margin: 0 0 3% -1%;
+     padding: 0 0 0 3%;
+     background: #4b4b4b;
+ }
+
+ /* END OF HEADER     END OF HEADER       END OF HEADER      END OF HEADER*/
+
+.contact_span{
+     margin: 0 0 0 40%;
+     font-size: 150%;
+     color: #fff;
+     font-weight: 800;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .contact_span:hover{
+     font-size: 152%;
+     letter-spacing: 10px;
+     margin: 0 0 0 35%;
+     transition: 1s;
+ }
+
+ .common_div{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    margin: 2% 0 0 0;
+    float: left;
+
+ }
+
+ input[type=text],input[type=email] {
+     margin: 0 0 2% 0;
+     width: 75%;
+     height: 7%;
+ }
+
+ textarea{
+    width: 75%;
+    height: 15%;
+ }
+
+ ::placeholder{
+     font-size: 110%;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .check{
+     width: 40%;
+     height: 15%;
+     background: #1b1b1b;
+     position: absolute;
+     margin: 3% 0 0 0;
+ }
+
+ input[type=checkbox]{
+     width: 35%;
+     height: 35%;
+     margin: 8% -15% 0 -10%;
+ }
+
+.submit{
+     margin: 20% 0 0 5%;
+     width: 15%;
+     height: 10%;
+     background: red;
+     color: white; 
+     font-size: 80%;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     border-radius: 5px;
+ }
+
+ .info_{
+     width: 35%;
+     height: 70%;
+     position: absolute;
+     float: left;
+     font-family: monospace;
+     margin: 2% 0 0 50%;
+     text-align: center;
+ }
+
+.media_div{
+    width: 100%;
+    height: 20%;
+    margin: 2% 0 0 0;
+}
+
+i{
+    color: white;
+    font-size: 200%;
+    margin: 0 5% ;
+
+}
+
+
+
+.email__:link,.email__:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.email__:hover, i:hover{
+    color: red;
+}
+
+ 
+

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+body{
+    background-image: url(background2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1400px 660px;
+    font-family: 'Roboto', sans-serif;
+
+}
+#total_div{
+    border-radius: 5px;
+
+}
+/* Header hissesi*/ 
+#CommonHeader{ 
+    height: 100px;
+    border-radius: 40px;
+    position: relative; 
+}  
+  
+img{ 
+   width: 70px;
+   height: 70px;
+   float: left; 
+   padding: 10px 0 0 20px;
+}
+img:hover{
+    width: 75px;
+    height: 75px;
+    transition: 0.4s;
+}
+
+.Welcome{
+    width: 150px;
+    height: 70px;
+    padding: 20px 0 0 0;
+    float: left;
+    text-shadow: 5px 3px 1px black;
+    color:#fc0;
+    font-size: 37px;
+    font-weight: 800;
+    text-decoration: none;
+} 
+
+.Welcome:hover{
+    font-size: 41px;
+    transition: 0.4s;
+}
+
+#Icon_Welcome{
+    width: 260px;
+    height: 95px;
+    float: left;
+    margin: 30px 0 0 40px;
+    border-radius: 50%;
+    background: #4b4b4b;
+}
+
+#contact_link{
+    font-size: 20px;
+    width: 114px;
+    height: 28px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    margin: 50px 0 20px 900px;
+    padding: 3px 0 0 0;
+    text-decoration: none;
+    color: #d2b700;
+    background: #4b4b4b;
+    float: left;
+}
+
+#contact_link:hover{
+    text-decoration: none;
+    color: #00bd58;
+    font-size: 22px;
+    width: 117px;
+    height: 31px;
+    transition:0.3s;
+}
+
+/* Main hisse*/
+.common_order_div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 1335px;
+    width: 100%;
+    height: 290%;
+    position: absolute;
+    background: white;
+    margin: 3% 0 3% 0;
+
+ 
+}
+
+.fieldset_{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    max-width: 1300px;
+    width: 30%;
+    height: 19%;
+    float: left;
+    background: #808181;
+    position: relative;
+    border: none;
+    border-radius: 2px;
+    margin: 2% 0.2% 2% 0.8%;
+}
+
+
+legend{
+    font-size: 25px;
+    font-weight: 800;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+}
+
+.spans{
+    margin: 1% 10% 0 0;
+    font-size: 18px;
+    color: #f39c12;
+    font-weight: 800;
+
+}
+
+.s_m_l{
+    text-align: right;
+    font-size: 18px;
+}
+
+.items{
+    margin: 5% 0 0 0;
+    float: left;
+    color: #1b1b1b;
+}
+
+
+.numbers{
+    width: 60px  ;
+    height: 20px;
+    margin: 0 5% 0 1%;
+    background: #f39c12;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 15px;
+}
+
+/*  End of Order Area   End of Order Area   End of Order Area  End of Order Area*/
+
+.common_calculate{
+    width: 80%;
+    height: 45%;
+    margin: 90% 0 0 7%;
+    border: 3px double #4b4b4b;
+    position: absolute;
+    padding: 3%;
+}
+
+.question{
+    width: 16%;
+    height: 30%;
+    color: #191970;
+    float: left;
+    margin: 5% 0 0 25%;
+    letter-spacing: 3px;
+    
+}
+
+.info{
+    font-size: 130%;
+}
+
+.answer{
+    width: 40%;
+    height: 30%;
+    float: left;
+    margin: 4% 0 0 15%;
+}
+
+.answer_{
+    width: 90%;
+    height: 15%;
+    margin: 0 0 -4% 0;
+    background: orange;
+    color: #191970;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+input[type=button]{
+    width: 30%;
+    height: 8% ;
+    font-size: 130%;
+    font-weight: 800;
+    background: orange;
+    margin: 20% 0 0 5%;
+    float: left;
+    background: #4b4b4b;
+    color: orange;
+}
+
+.common_amount{
+    width: 50%;
+    height: 50%;
+    margin: -20% 0 0 50%;
+    float: left;
+}
+
+.amount{
+    width: 100%;
+    height: 40%;
+    font-size: 120%;
+    color: #191970;
+    text-align: center;
+    
+    
+}
+
+.view_price{
+    width: 61%;
+    height: 35%;
+    margin: 5% 0 0 20%;
+    font-size: 130%;
+    color: #191970;
+    border: 1px solid #191970;
+    background: orange;
+}
+
+.payment{
+    width: 100%;
+    height: 50%;
+    margin: 0% 0 0 0;
+    font-size: 120%;
+    color: #191970;
+    text-align: center;
+
+
+}
+
+span{
+    font-size: 70%;
+}
+
+.card_number{
+    width: 60%;
+    height: 15%;
+    background: orange;
+
+}
+
+.date_code{
+    width: 20%;
+    height: 10%;
+    margin: 0 5% 0 0 ;
+}
+
+.common_date{
+    width:100%;
+    height: 50%;
+}
+
+.date{
+    width: 30%;
+    height: 80%;
+    margin: 3% 0 0 15%;
+    float: left;
+}
+
+.date_input{
+    width: 80%;
+    height: 30%;
+    background: orange;
+}
+
+::placeholder{
+    color: #191970;
+    font-size: 80%;
+}

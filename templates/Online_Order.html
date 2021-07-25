@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">  
+    <head>
+        <title>Order</title>
+        <link rel="stylesheet" href="{% static 'Online_Order.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://c0.klipartz.com/pngpicture/1008/303/gratis-png-carrito-de-compras-thumbnail.png">
+
+        <script type="text/javascript">
+           
+          function calculate_func()    
+          { 
+            var arr = document.getElementsByName('qty');
+            var scale = document.querySelectorAll('.say');
+            console.log(scale);
+    
+            var tot = 0;
+             for(var i=0;i<arr.length;i++){
+               if(arr[i].value != "" && scale[i].value != ""){
+                 tot += parseFloat(scale[i].value) * parseFloat(arr[i].value);
+            
+                 }
+        }
+            document.getElementById('total').value = tot.toFixed(2) + " azn";
+
+          } 
+
+        </script>
+
+ 
+    </head>
+<body> 
+    <header>
+        <div id="CommonHeader">
+            <div id="Icon_Welcome">
+                <img src="{% static 'restaurant_icon1.png' %}" alt="Restaurant Icon">   <div ><a href=" {% url 'index' %}" class="Welcome">Welcome</a></div>
+            </div>
+
+            <a href="{% url 'contact' %}" target="_blank" id="contact_link"> 
+                Contact 
+            </a>
+
+
+        </div>
+
+    </header>
+
+    <main> 
+        <div class="common_order_div" style="height: 310%;">
+ 
+<!--*******Pizza order area******--> 
+    <form action="create" method="POST">
+        {% csrf_token %}
+     
+            <fieldset class="fieldset_" style="width: 30%;">  
+                 <legend>Pizzas</legend>
+
+                 <div class="s_m_l">
+                    <span class="spans">How much?</span>
+                 </div>
+                                                    
+                <!--*****-->
+                <form action="" method="POST">
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left; " name="itemname" >Marqarita</div>
+                    
+                    <div style="float: left; width: 80px;  ">
+                        <input type="text" name="marqarita" onblur="calculate_func() " placeholder="number" class="numbers say" id="p1" onclick="calculate_func()" >
+                        <input type="text" name="qty" value="13.5" onblur="calculate_func()" style=" width: 2%; visibility: hidden;                        margin: -10% 0 0 -10%" >
+                    </div>
+                   
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" >Qril toyuq</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="qril_toyuq" onblur="calculate_func()"  placeholder="number say" class="numbers say" id="p2" onclick="calculate_func()" >
+                        <input type="text" name="qty" value="13.2" onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" >Pepperoni</div>
+                    
+                    <div style="float: left; width: 80px; ">
+                        <input type="text" name="pepperoni" onblur="calculate_func()"  placeholder="number" class="numbers say" id="p3" >
+                        <input type="text" name="qty" value="13.8" onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Bol 5li</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="bol_5li" onblur="calculate_func()"  placeholder="number" class="numbers say" id="p4">
+                        <input type="text" name="qty" value="12.9" onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Kalipso</div>
+                    
+                    <div style="float: left; width: 80px; ">
+                        <input type="text" name="kalipso" onblur="calculate_func()"  placeholder="number" class="numbers say" id="p5" >
+                        <input type="text" name="qty" value="14.9" onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Italiano</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="italiano" onblur="calculate_func()"  placeholder="number" class="numbers say" id="p6">
+                        <input type="text" name="qty" value="16.5" onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div> 
+
+                 </div>
+
+                 <!--*****-->
+
+                 
+                
+                </fieldset> 
+
+    <!--*******HAMBURGERS order area******--> 
+
+            <fieldset class="fieldset_" style="width: 30%;">    
+                <legend>Hamburgers</legend>
+
+                <div class="s_m_l">
+                    <span class="spans">How much?</span>
+                 </div>
+
+                <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left; " name="itemname" >Hamburger</div>
+                    
+                    <div style="float: left; width: 80px;  ">
+                        <input type="text" name="hamburger" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                        <input type="text" name="qty" value="1.6" onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                                            
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" > Chickenburger </div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="chicken_burger" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                        <input type="text" name="qty" value="2.4" onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left;" name="itemname">Dabl Hamburger</div>
+                    
+                    <div style="float: left; width: 80px; ">
+                        <input type="text" name="dabl_hamburger" placeholder="number" class="numbers say" onblur="calculate_func()">
+
+                        <input type="text" name="qty" value="2.9" onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >McChicken</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="mc_chicken" placeholder="number" class="numbers say" onblur="calculate_func()">
+
+                        <input type="text" name="qty" value='3.7' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Big Mac</div>
+                    
+                    <div style="float: left; width: 80px; ">
+                        <input type="text" name="big_mac" placeholder="number" class="numbers say" onblur="calculate_func()">
+
+                        <input type="text" name="qty" value='3.95' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Big Tasty (chicken)</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="big_tasty" placeholder="number" class="numbers say" onblur="calculate_func()" >
+
+                        <input type="text" name="qty" value='7.9' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Big Tasty (meat)</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="big_tasty_meat" placeholder="number" class="numbers say" onblur="calculate_func()" >
+
+                        <input type="text" name="qty" value='8.2' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+           
+            </fieldset>
+
+    <!--*******COLD DRINKS order area******--> 
+
+            <fieldset class="fieldset_" style="width: 30%;">     
+                <legend>Cold Drinks</legend>
+
+                <div class="s_m_l">
+                    <span class="spans">How much?</span>
+                 </div>
+
+                <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" >Water</div>
+                    
+                    <div style="float: left; width: 80px;  ">
+                        <input type="text" name="water" placeholder="number" class="numbers say" onblur="calculate_func()">
+                         <input type="text" name="qty" value='1.0' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left;" name="itemname">Sprite</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="sprite" placeholder="number" class="numbers say" onblur="calculate_func()" >
+
+                         <input type="text" name="qty" value='2.0' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px; float: left;" name="itemname">Orange Juice </div>
+                    
+                    <div style="float: left; width: 80px; ">
+                        <input type="text" name="orange_juice" placeholder="number" class="numbers say" onblur="calculate_func()">
+                         <input type="text" name="qty" value='4.2' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Lemonade</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="lemonade" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                         <input type="text" name="qty" value='5.6' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Chai Chiller</div>
+                    
+                    <div style="float: left; width: 80px; ">
+                        <input type="text" name="chai_chiller" placeholder="number" class="numbers say" onblur="calculate_func()" >
+
+                         <input type="text" name="qty" value='6.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Affagato Magnum</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="affagato_magnum" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                         <input type="text" name="qty" value='7.4' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+
+                 <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Tonic Americano</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="tonic_americano" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                         <input type="text" name="qty" value='7.7' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+
+                 </div>
+
+                 <!--*****-->
+       
+            </fieldset>
+
+
+
+<!--***********************************END OF PIZZA,HAMBURGER,COLD DRINKS ORDER *********************************************-->
+
+        <!--*******TEAS order area******--> 
+            <fieldset class="fieldset_" style="width: 30%;">   
+                <legend>Teas</legend>
+
+                <div class="s_m_l">
+                   <span class="spans">How much?</span>
+                </div>
+
+               <!--****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left; " name="itemname" > Simple Tea</div>
+                   
+                   <div style="float: left; width: 80px;  ">
+                       <input type="text" name="simple_tea" placeholder="number" class="numbers say" onblur="calculate_func()" >
+
+                        <input type="text" name="qty" value='4.0' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" >Spicy Tea</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="spicy_tea" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                        <input type="text" name="qty" value='4.9' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                  
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left;" name="itemname">Fruity Tea</div>
+                   
+                   <div style="float: left; width: 80px; ">
+                       <input type="text" name="fruity_tea" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                        <input type="text" name="qty" value='4.9' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname">Peach Tea</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="peach_tea" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                        <input type="text" name="qty" value='4.9' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Cherry Tea</div>
+                   
+                   <div style="float: left; width: 80px; ">
+                       <input type="text" name="cherry_tea" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                        <input type="text" name="qty" value='4.9' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Green Tea</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="green_tea" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                        <input type="text" name="qty" value='4.9' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                    <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Lilac Tea</div>
+                    
+                    <div style="float: left; width: 80px;">
+                        <input type="text" name="lilac_tea" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                         <input type="text" name="qty" value='5.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                    </div>
+ 
+                 </div>
+
+
+           </fieldset>
+
+      <!--*******COFFEES order area******--> 
+
+           <fieldset class="fieldset_" style="width: 30%;">    
+               <legend>Coffees</legend>
+
+               <div class="s_m_l">
+                   <span class="spans">How much?</span>
+                </div>
+
+               <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left; " name="itemname" >Espresso</div>
+                   
+                   <div style="float: left; width: 80px;  ">
+                       <input type="text" name="espresso" placeholder="number" class="numbers say" onblur="calculate_func()">
+                       <input type="text" name="qty" value='2.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" >Americano</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="americano" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                       <input type="text" name="qty" value='3.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                  
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" >Turkish Coffee</div>
+                   
+                   <div style="float: left; width: 80px; ">
+                       <input type="text" name="turkish_coffee" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                       <input type="text" name="qty" value='3.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Cappuccino</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="cappuccino" placeholder="number" class="numbers say" onblur="calculate_func()">
+                       <input type="text" name="qty" value='4.9' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Cafe Mocha</div>
+                   
+                   <div style="float: left; width: 80px; ">
+                       <input type="text" name="cage_mocha" placeholder="number" class="numbers say" onblur="calculate_func()">
+                       <input type="text" name="qty" value='5.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Cafe Raf</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="cafe_raf" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                       <input type="text" name="qty" value='5.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Chocolate Latte</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="chocolate_latte" placeholder="number" class="numbers say" onblur="calculate_func()">
+                       <input type="text" name="qty" value='6.0' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+          
+           </fieldset>
+
+     <!--*******DESSERTS order area******--> 
+
+           <fieldset class="fieldset_" style="width: 30%;">    
+               <legend>Dessert</legend>
+
+               <div class="s_m_l">
+                   <span class="spans">How much?</span>
+                </div>
+
+               <!--*****--> 
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left; " name="itemname" >Honey Cake</div>
+                   
+                   <div style="float: left; width: 80px;  ">
+                       <input type="text" name="hone_cake" placeholder="number" class="numbers say" onblur="calculate_func()">
+                       <input type="text" name="qty" value='5.0' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" >Tiramisu</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="tiramisu" placeholder="number" class="numbers say" onblur="calculate_func()">
+                       <input type="text" name="qty" value='5.0' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                  
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px; float: left;" name="itemname" >Chocolate with milk</div>
+                   
+                   <div style="float: left; width: 80px; ">
+                       <input type="text" name="chocolate_milk" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                       <input type="text" name="qty" value='5.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Melted Chocolate</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="melted_chocolate" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                       <input type="text" name="qty" value='5.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Profitrol</div>
+                   
+                   <div style="float: left; width: 80px; ">
+                       <input type="text" name="profitrol" placeholder="number" class="numbers say" onblur="calculate_func()">
+                       <input type="text" name="qty" value='6.0' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Lemon Cheesecake</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="lemon_cheesecake" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                       <input type="text" name="qty" value='6.0' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+
+                <div class="items">
+                   <div style=" font-size: 19px; width: 280px;  float: left;" name="itemname" >Chocolate Cheesecake</div>
+                   
+                   <div style="float: left; width: 80px;">
+                       <input type="text" name="chocolate_cheesecake" placeholder="number" class="numbers say" onblur="calculate_func()" >
+                       <input type="text" name="qty" value='7.5' onblur="calculate_func()" style=" width: 2%; visibility: hidden; margin: -10% 0 0 -10%" >
+                   </div>
+
+                </div>
+
+                <!--*****-->
+      
+           </fieldset>
+    
+<!-- END OF ITEMS ORDER AREA   END OF ITEMS ORDER AREA   END OF ITEMS ORDER AREA  END OF ITEMS ORDER AREA   END OF ITEMS ORDER AREA   END OF ITEMS ORDER AREA-->
+         
+          
+           
+          
+          <div class="common_calculate" style="height: 35%;">  <!-- double border olan frame burdan baslayir -->
+           
+                <span style="font-size: 250%; margin: -2% 0 0 -55%; color: #191970; font-family: Georgia, 'Times New Roman', Times, serif; position: absolute;">Payment:</span>
+
+
+          
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><!--USED FOR CLICK BUTTON AND VIEW TOTAL AMOUNT-->
+     <input type="button" name="calc"  value="CALCULATE " onClick="$('#total').toggle();" style="margin: 10% 0 0 0; height: 10%;cursor:pointer" >
+
+     
+
+    <div class="common_amount">
+            
+     <div class="amount" style="margin: 15% 0 0 0;">
+            Total amount <hr>
+        
+        <div class="view_price" id="total_div" style="height: 48%;" > 
+           
+                <input type="text" id="total"  name="total_view" readonly="readonly" value="0.00 azn" style="width: 98%;height: 90%; color: #191970;text-align: center;background: orange; display: none; "  > 
+            
+        </div> 
+        
+    </form>
+          
+              
+    
+    </div>
+
+       <!-- <div class="payment">
+            <div>
+                Card information <hr>
+            </div>
+             <span>Card number</span> <br>
+            <input type="text" name="card_number" id="" class="card_number">
+                         
+            <div class="common_date">
+                <div class="date">
+                   <span> End date</span> 
+                    <input type="text" name="end_date" id="" placeholder="mm/yy" class="date_input">
+                </div>
+
+                <div class="date">
+                    <span> CVV2/CVC2</span> 
+                     <input type="text" name="end_date" id="" placeholder="example : 123" class="date_input" >
+                 </div>
+
+                 
+
+            </div>
+        </div>   
+     -->
+        
+       
+        
+
+        </div>   <!--COMMON AMOUNT DIV END-->
+
+            {% csrf_token %}
+        <div class="question" style="margin: 3% 0 0 53%; width: 50%; height: 30%;">
+                    <span class="info"  >Name  and Lastname:</span>  <br><br> 
+                    <input type="text" name="namelastname" id=""  class="answer_" style="height: 30px;"> <br><br><br> 
+                    <span class="info">Adress:</span>  <br><br> 
+                    <input type="text" name="address" id="" class="answer_" style="height: 30px;"> <br> <br><br>
+                    <span class="info">Phone number:</span>  <br><br> 
+                    <input type="text" name="phone" id="" class="answer_" style="height: 30px;"> <br><br><br> 
+                    <button style="width: 60%; height: 30%; background: #4b4b4b; color: orange; ;font-weight: 800;font-size: 130%;cursor:pointer;padding: 5px 15px;border: none;display: grid;place-items: center; margin: -35% 0 0 -105%;">
+                        ORDER
+                    </button> 
+               </div> 
+               
+               <!--<div class="answer" style="margin: 4% -6% 0 5%;">
+             
+                   
+
+               </div> -->
+        </form>
+
+
+    </div>  <!-- END OF  double border area********-->
+            
+    
+</div>    <!--END OF WHITE AREA-->
+
+    </main>
+
+</body>
+</html>

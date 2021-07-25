@@ -1,0 +1,269 @@
+body{
+    background-image: url(background2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1400px 660px;
+}
+
+/* Header hissesi*/
+#CommonHeader{
+    height: 100px;
+    border-radius: 40px;
+    position: relative; 
+} 
+
+img{
+   width: 70px;
+   height: 70px;
+   float: left;
+   padding: 10px 0 0 20px;
+}
+img:hover{
+    width: 75px;
+    height: 75px;
+    transition: 0.4s;
+}
+
+.Welcome{
+    width: 150px;
+    height: 70px;
+    padding: 20px 0 0 0;
+    float: left;
+    text-shadow: 5px 3px 1px black;
+    color:#fc0;
+    font-size: 37px;
+    font-weight: 800;
+    text-decoration: none;
+} 
+
+.Welcome:hover{
+    font-size: 41px;
+    transition: 0.4s;
+}
+
+#Icon_Welcome{
+    width: 260px;
+    height: 95px;
+    float: left;
+    margin: 30px 0 0 40px;
+    border-radius: 50%;
+    background: #4b4b4b;
+}
+
+#contact_link{
+    font-size: 20px;
+    width: 114px;
+    height: 28px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    margin: 50px 0 20px 900px;
+    padding: 3px 0 0 0;
+    text-decoration: none;
+    color: #d2b700;
+    background: #4b4b4b;
+    float: left;
+}
+
+#contact_link:hover{
+    text-decoration: none;
+    color: #00bd58;
+    font-size: 22px;
+    width: 117px;
+    height: 31px;
+    transition:0.3s;
+}
+
+/* Main hisse*/
+.common_order_div{
+    max-width: 1335px;
+    width: 100%;
+    height: 290%;
+    position: absolute;
+    background: white;
+    margin: 3% 0 3% 0;
+
+
+}
+
+.fieldset_{
+    max-width: 1300px;
+    width: 30%;
+    height: 20%;
+    float: left;
+    background: #4b4b4b;
+    position: relative;
+    margin: 2% 0.2% 2% 0.8%;
+}
+
+legend{
+    font-size: 25px;
+    font-weight: 800;
+    color: orange;
+}
+
+.spans{
+    margin: 1% 6% 0 0;
+    font-size: 18px;
+    color: orange;
+    font-weight: 800;
+
+}
+
+.s_m_l{
+    text-align: right;
+    font-size: 18px;
+}
+
+.items{
+    margin: 5% 0 0 0;
+    float: left;
+    color: #1b1b1b;
+}
+
+
+.numbers{
+    width: 60px  ;
+    height: 20px;
+    margin: 0 10% 0 1%;
+    background: orange;
+}
+
+/*  End of Order Area   End of Order Area   End of Order Area  End of Order Area*/
+
+.common_info{
+    width: 80%;
+    height: 10%;
+    margin: 2% 0 0 7%;
+    border: 3px double #4b4b4b;
+    position: absolute;
+    padding: 3%;
+
+}
+
+.question{
+    width: 20%;
+    height: 110%;
+    color: #191970;
+    float: left;
+    margin: -1% 0 0 15%;
+    
+}
+
+.info{
+    font-size: 130%;
+}
+
+.input_answer{
+    width: 30%;
+    height: 110%;
+    float: left;
+    margin: -2% 0 0 10%;
+}
+
+.answer_{
+    width: 90%;
+    height: 10%;
+    background: orange;
+    color: #191970;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.common_calculate{
+    width: 80%;
+    height: 25%;
+    margin: 28% 0 0 7%;
+    border: 3px double #4b4b4b;
+    position: absolute;
+    padding: 3%;
+}
+
+
+
+button{
+    width: 20%;
+    height: 20% ;
+    font-size: 130%;
+    background: orange;
+    margin: 15% 0 0 5%;
+    float: left;
+}
+
+.common_amount{
+    width: 60%;
+    height: 90%;
+    margin: 1% 0 0 40%;
+}
+
+.amount{
+    width: 70%;
+    height: 40%;
+    font-size: 120%;
+    color: #191970;
+    text-align: center;
+    
+}
+
+.view_price{
+    width: 50%;
+    height: 25%;
+    padding: 3% 0 0 0;
+    margin: 5% 0 0 30%;
+    font-size: 100%;
+    background: orange;
+}
+
+.payment{
+    width: 70%;
+    height: 50%;
+    margin: 3% 0 0 0;
+    font-size: 120%;
+    color: #191970;
+    text-align: center;
+
+
+}
+
+span{
+    font-size: 70%;
+}
+
+.card_number{
+    width: 60%;
+    height: 15%;
+    background: orange;
+
+}
+
+.date_code{
+    width: 20%;
+    height: 10%;
+    margin: 0 5% 0 0 ;
+}
+
+.common_date{
+    width:100%;
+    height: 50%;
+}
+
+.date{
+    width: 30%;
+    height: 80%;
+    margin: 3% 0 0 15%;
+    float: left;
+}
+
+.date_input{
+    width: 80%;
+    height: 30%;
+    background: orange;
+}
+
+::placeholder{
+    color: #191970;
+    font-size: 80%;
+}
+
+
+

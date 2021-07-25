@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Hamburger</title>
+        <link rel="stylesheet" href=" {% static 'Hamburgers.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTerNt8Y5FQijxgEauzyu0uo9U2Jlw1KxLnB6uG2y7xN6gtyndife5CeMqwdZLxS4lXo1I&usqp=CAU">
+
+
+    </head>
+<body> 
+    <header>
+        <div id="CommonHeader">
+            <div id="Icon_Welcome">
+                <img src=" {% static 'restaurant_icon1.png' %}" alt="Restaurant Icon">   <div ><a href=" {% url 'index' %} " class="Welcome">Welcome</a></div>
+            </div>
+
+            
+             <a href="{% url 'order' %}" target="_blank" id="order_link"> 
+                 Online order  
+             </a>   
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="MenuTable">
+
+            <div class="HamburgerWord">
+                <strong> HAMBURGER</strong> 
+            </div>
+          <div>
+
+            <table class="ItemList">
+
+                <tr>
+                    <td> Hamburger  </td>
+                    <td >  </td>
+                    <td > </td>
+                    <td > 1.60  </td>
+
+                </tr>
+
+                <tr id="YellowColor">
+                    <td> Chickenburger </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 2.40   </td>
+
+                </tr>
+
+                <tr >
+                    <td> Dabl Hamburger </td>
+                    <td>  </td>
+                    <td> </td>
+                    <td> 2.90  </td>
+
+                </tr>
+
+                <tr id="YellowColor">
+                    <td> McChicken </td>
+                    <td>  </td>
+                    <td> </td>
+                    <td> 3.70   </td>
+
+                </tr>
+
+                <tr >
+                    <td> Big Mac </td>
+                    <td> </td>
+                    <td>  </td>
+                    <td> 3.95  </td>
+
+                </tr>
+
+                <tr id="YellowColor">
+                    <td> Big Tasty (chicken)  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 7.90     </td>
+
+                </tr>
+
+                <tr >
+                    <td> Big Tasty (meat) </td>
+                    <td> </td>
+                    <td>  </td>
+                    <td> 8.20  </td>
+
+                </tr>
+
+                
+
+
+                
+
+
+            </table>
+
+        </div>
+            
+
+
+
+
+        </div>
+
+    </main>
+
+
+
+</body>
+</html>

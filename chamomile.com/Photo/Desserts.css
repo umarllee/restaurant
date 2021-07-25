@@ -1,0 +1,110 @@
+body{
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1400px 660px;
+}
+
+/* Header hissesi*/
+#CommonHeader{
+    height: 100px;
+    border-radius: 40px;
+} 
+
+img{
+   width: 70px;
+   height: 70px;
+   float: left;
+   padding: 10px 0 0 20px;
+}
+img:hover{
+    width: 75px;
+    height: 75px;
+    transition: 0.4s;
+}
+
+.Welcome{
+    width: 150px;
+    height: 70px;
+    padding: 20px 0 0 0;
+    float: left;
+    text-shadow: 5px 3px 1px black;
+    color:#fc0;
+    text-decoration: none;
+    font-size: 37px;
+    font-weight: 800;
+}
+
+.Welcome:hover{
+    font-size: 41px;
+    transition: 0.4s;
+}
+
+#Icon_Welcome{
+    width: 260px;
+    height: 85px;
+    float: left;
+    margin: 10px 0 0 30px;
+    border-radius: 50%;
+    background: #4b4b4b;
+}
+
+#order_link{
+    font-size: 20px;
+    width: 114px;
+    height: 28px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    margin: 25px 0 20px 900px;
+    padding: 3px 0 0 0;
+    text-decoration: none;
+    color: #d2b700;
+    background: #4b4b4b;
+}
+
+#order_link:hover{
+    text-decoration: none;
+    color: #00bd58;
+    font-size: 22px;
+    width: 117px;
+    height: 31px;
+    transition:0.3s;
+
+}
+
+/* Main hisse*/
+
+.MenuTable{
+    width: 700px;
+    height: 740px;
+    background-image: url(menu.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 800px;
+    margin: 20px 0 20px 330px;
+    padding: 60px 0 0 0;
+}
+
+.CoffeeWord{
+    width: 170px;
+    height: 40px;
+    color: #fc0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 0 0 270px;
+    font-size: 33px;
+    font-weight: 800px;
+}
+
+.ItemList{
+    width:530px;
+    height: 600px;
+    margin: 30px 0 0 70px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 18px;
+    color: #c4c4c4;
+}
+
+#YellowColor{
+    color: #fc0; 
+}

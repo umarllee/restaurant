@@ -1,0 +1,338 @@
+body{
+    background-image: url(background2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1400px 660px; 
+}
+
+/* Header hissesi*/
+#CommonHeader{
+    height: 100px;
+    border-radius: 40px;
+} 
+
+img{
+   width: 70px;
+   height: 70px; 
+   float: left;
+   padding: 10px 0 0 20px;
+}
+img:hover{
+    width: 75px;
+    height: 75px;
+    transition: 0.4s;
+}
+
+.Welcome{
+    width: 150px;
+    height: 70px;
+    padding: 20px 0 0 0;
+    float: left;
+    text-shadow: 5px 3px 1px black;
+    color:#fc0;
+    font-size: 37px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.Welcome:hover{
+    font-size: 41px;
+    transition: 0.4s;
+}
+
+#Icon_Welcome{
+    width: 260px;
+    height: 95px;
+    float: left;
+    margin: 0 0 0 30px;
+    border-radius: 50%;
+    background: #4b4b4b;
+}
+
+#order_link{
+    font-size: 20px;
+    width: 114px;
+    height: 28px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    margin: 25px 0 20px 750px;
+    padding: 3px 0 0 0;
+    text-decoration: none;
+    color: #d2b700;
+    background: #4b4b4b;
+    float: left;
+}
+
+#order_link:hover{
+    text-decoration: none;
+    color: #00bd58;
+    font-size: 22px;
+    width: 117px;
+    height: 31px;
+    transition:0.3s;
+
+} 
+
+#contact_link{
+    font-size: 20px;
+    width: 114px;
+    height: 28px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    margin: 25px 0 20px 50px;
+    padding: 3px 0 0 0;
+    text-decoration: none;
+    color: #d2b700;
+    background: #4b4b4b;
+    float: left;
+}
+
+#contact_link:hover{
+    text-decoration: none;
+    color: #00bd58;
+    font-size: 22px;
+    width: 117px;
+    height: 31px;
+    transition:0.3s;
+}
+
+/* Main hissesi*/
+
+.MenuWord{
+    width: 400px;
+    height: 50px; 
+    margin: 30px 0 0 470px;
+    padding: -5px 0 0 0;
+    text-align: center;
+    font-size: 45px;
+    font-style: italic;
+    color: #fc0;
+    text-shadow: 5px 3px 1px black;
+    border-radius: 50%;
+}
+
+
+.MenuWord:hover{
+    letter-spacing: 5px;
+    border-radius: 44%;
+    font-size: 47px;
+    transition: 1s;
+}
+
+#PizzaDiv{
+    float: left;
+    margin: 50px 0 -20px 0;
+}
+.Pizzas:link,.Pizzas:visited{
+    width: 340px ;
+    height: 180px;
+    margin: 0 0 50px 115px ;
+    padding: 70px 0 0 160px;
+    float: left;
+    color: #fc0;
+    background-image: url(https://image.freepik.com/free-photo/tasty-pepperoni-pizza-on-a-black-concrete-background_79782-103.jpg); 
+    background-size:500px 250px ;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 60px ;
+    
+
+}
+
+.Pizzas:hover{
+    background-image: url(https://image.freepik.com/free-photo/tasty-pepperoni-pizza-on-a-black-concrete-background_79782-103.jpg); 
+    font-weight: 800;
+    border-radius: 50%;
+    font-weight: 800;
+    transition: 0.3s;
+    width: 280px ;
+    padding: 70px 30px 0 170px;
+    background: #fc0;
+    color: #00bd58;
+
+}
+
+#HamburgerDiv{
+    
+    float: left;
+    margin: 50px 40px  -20px 115px;
+}
+
+.Hamburgers:link,.Hamburgers:visited{
+    width: 380px ;
+    height: 175px;
+    float: left;
+    padding: 70px 0 0 120px;
+    color: #fc0;
+    background-image: url(https://www.negroni.com/sites/negroni.com/files/styles/scale__1440_x_1440_/public/hamburger_thumb.jpg?itok=yAaXpDm3); 
+    background-size:500px 250px ;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 60px ;
+}
+
+.Hamburgers:hover{
+    background-image: url(https://www.negroni.com/sites/negroni.com/files/styles/scale__1440_x_1440_/public/hamburger_thumb.jpg?itok=yAaXpDm3); 
+    background: #fc0;
+    color: #00bd58;
+    text-align: center;
+    border-radius: 70%;
+    width: 280px ;
+    padding: 70px 100px 0 100px;
+    font-size: 54px;
+    font-weight: 800;
+    transition: 0.3s;
+
+}
+
+#DrinkDiv{
+    clear: both;
+    margin: -20px 0 30px 115px;
+}
+.Cold_Drinks:link,.Cold_Drinks:visited{
+    float: left;
+    clear: both;
+    width: 480px ;
+    height: 170px;
+    padding: 70px 0 0 20px;
+    color: #fc0;
+    background: red;
+    text-align: center;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/800/886/341/background-water-drops-black-wallpaper-preview.jpg); 
+    background-size:500px 250px ;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 50px ;
+    
+
+}
+
+.Cold_Drinks:hover{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/800/886/341/background-water-drops-black-wallpaper-preview.jpg); 
+    background: #fc0;
+    color: #00bd58;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 54px;
+    font-weight: 800;
+    transition: 0.3s;
+
+}
+
+#TeaDiv{
+    float: left;
+    margin: -34px 0 30px 115px;
+}
+
+.Tea:link,.Tea:visited{
+    float: left;
+    clear: both;
+    width: 500px ;
+    height: 170px;
+    padding: 70px 0 0 0;
+    color: #fc0;
+    background: red;
+    text-align: center;
+    background-image: url(https://img5.goodfon.ru/wallpaper/nbig/4/f1/chashka-bliudtse-chai-listia-tsvety-fon-chiornyi.jpg); 
+    background-size:500px 250px ;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 50px ;
+
+}
+
+.Tea:hover{
+    background-image: url(https://img5.goodfon.ru/wallpaper/nbig/4/f1/chashka-bliudtse-chai-listia-tsvety-fon-chiornyi.jpg); 
+    border-radius: 50%;
+    font-size: 54px;
+    font-weight: 800;
+    transition: 0.3s;
+    background: #fc0;
+    color: #00bd58;
+    text-align: center;
+}
+
+#CoffeeDiv{
+    clear: both;
+    margin: 20px 0 20px 115px;
+}
+.Coffee:link,.Coffee:visited{
+    float: left;
+    clear: both;
+    width: 300px ;
+    height: 170px;
+    padding: 70px 0 0 200px;
+    color: #fc0;
+    background: red;
+    background-image: url(https://img.freepik.com/free-vector/realistic-coffee-background_79603-1652.jpg?size=626&ext=jpg); 
+    background-size:500px 250px ;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 50px ;
+    
+
+}
+
+.Coffee:hover{
+    background-image: url(); 
+    background: #fc0;
+    color: #00bd58;
+    width: 330px ;
+    padding: 70px 0 0 170px;
+    border-radius: 50%;
+    font-size: 54px;
+    font-weight: 800;
+    transition: 0.3s;
+
+}
+
+#DessertDiv{
+    float: left;
+    margin: 0 0 20px 115px;
+}
+
+.Dessert:link,.Dessert:visited{
+    float: left;
+    clear: both;
+    width: 350px ;
+    height: 170px;
+    padding: 70px 0 0 150px;
+    color: #fc0;
+    background: red;
+    background-image: url(https://thumbs.dreamstime.com/b/isolated-three-italian-dessert-white-plate-sweet-desserts-black-background-200399720.jpg); 
+    background-size:500px 250px ;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 50px ;
+
+}
+
+.Dessert:hover{
+    background-image: url(); 
+    border-radius: 50%;
+    background: #fc0;
+    color: #00bd58;
+    width: 350px ;
+    padding: 70px 0 0 150px;
+    font-size: 54px;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.Footer{
+    width: 450px;
+    height: 30px;
+    margin: 280px 0 0 430px;
+    color: #c4c4c4;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Footer:hover{
+    color: black;
+    transition: 0.4s;
+    font-weight: 800;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <title> Desserts </title>
+        <link rel="stylesheet" href=" {% static 'Desserts.css' %} ">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKNvZzYxWzMTD5Wt9TJYwfhstDhgCnA8DPCQ&usqp=CAU">
+
+
+    </head>
+<body> 
+    <header> 
+        <div id="CommonHeader">
+            <div id="Icon_Welcome">
+                <img src=" {% static 'restaurant_icon1.png' %}" alt="Restaurant Icon">   <div ><a href=" {% url 'index' %} " class="Welcome">Welcome</a></div>
+            </div>
+
+            
+             <a href="{% url 'order' %}" target="_blank" id="order_link"> 
+                 Online order  
+             </a>   
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="MenuTable">
+
+            <div class="CoffeeWord">
+                <strong> Desserts</strong> 
+            </div>
+          <div>
+
+            <table class="ItemList">
+
+                <tr>
+                    <td> Honey Cake </td>
+                    <td >  </td>
+                    <td > </td>
+                    <td > 5.00 </td>
+
+                </tr>
+
+                <tr id="YellowColor">
+                    <td> Tiramisu </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 5.00 </td>
+
+                </tr>
+
+                <tr >
+                    <td> Chocolate with milk </td>
+                    <td> </td>
+                    <td>  </td>
+                    <td> 5.50 </td>
+
+                </tr>
+
+                <tr id="YellowColor">
+                    <td> Melted Chocolate  </td>
+                    <td> </td>
+                    <td>  </td>
+                    <td> 5.50 </td>
+
+                </tr>
+
+                <tr >
+                    <td> Profitrol </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 6.00 </td>
+
+                </tr>
+
+                <tr id="YellowColor">
+                    <td> Lemon Cheesecake </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 6.00 </td>
+
+                </tr>
+
+                
+
+                <tr >
+                    <td> Chocolate Cheesecake </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 7.50 </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+            
+
+        </div>
+
+    </main>
+
+
+
+</body>
+</html>

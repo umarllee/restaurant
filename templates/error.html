@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            z-index: 9999999999;
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            transition: 300ms all;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-size: 40px;
+            color: red;
+            font-weight: bold;
+        }
+        .image{
+            display: none;
+            width: 10%;
+        }
+        .text{
+            position: absolute; bottom: 20px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="loader">
+        <img width="40%" src="https://www.zerafetcigkofte.com/theme/themeFiles/images/loader.gif" alt="">
+    </div>
+    <img class="image" src="http://getdrawings.com/free-icon/warning-icon-png-67.png" alt="">
+    <h4 class="text">
+        {{msg}}
+    </h4>
+    <script>
+        setTimeout(
+            function(){
+                $('.loader').css('opacity',0);
+                $('.loader').css('z-index',1);
+                $('.image').css('display','block');
+
+            }
+
+            ,2000
+        )
+        setTimeout(
+            function(){
+                window.location.href = "/order";
+            }
+            
+            ,6000
+        )
+    </script>
+</body> 
+</html>

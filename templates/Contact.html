@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+ {% load static %} 
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href=" {% static 'Contact.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://i.pinimg.com/736x/f3/3c/c0/f33cc07fa0044261d61a6645a67ef496.jpg">
+        <meta charset="utf-8">
+        <meta name="title" content="Chamomile Cafe & Restaurant">
+        <meta name="robots"  content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Language" content="en-Az">
+
+     
+
+    </head>
+<body>
+
+    <header>
+        <div id="Icon_Welcome">
+            <img src="{% static 'restaurant_icon1.png' %}" alt="Restaurant Icon">   <div ><a href=" " class="Welcome">Welcome</a></div>
+        </div>
+    </header>
+
+    <main>
+
+        <span class="contact_span"> CONTACT US!</span> <br> <br>
+           Do you have a problem? Tell us about it.
+ 
+    <form action=" " method="POST" id="my-form">
+
+        {% csrf_token %}
+        <div class="common_div">
+             {{form.name_surname}} <br>
+             {{form.email}} <br>
+             {{form.message}}
+             
+           <!-- <div class="check">
+                <input type="checkbox" name="not_robot" required> <div style="font-size: 100%; margin: 8% 35% 0 0; float: right; ">I'm not a robot!</div> 
+
+            </div> <br>
+            -->
+
+            <input type="submit" value="SEND" class="submit" style="margin: 20% 0 0 5%;
+            width: 15%;
+            height: 10%;
+            background: red;
+            color: white; 
+            position:absolute;
+            font-size: 80%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            margin: 30% 0 0 -35%">
+        </div>
+
+    </form>
+
+        <div class="info_">
+            Heyder Eliyev pr. 73A <br> <br>
+            (+994) 70 777 77 77  <br> <br>
+            (+994) 50 555 55 55 <br> <br>
+            <a href="mailto:chamomile.restaurant@gmail.com" class="email__">chamomile.restaurant@gmail.com</a> 
+
+            <div  class="media_div">
+                <a href="https://www.facebook.com/gulchohra.umarli/"> <i class="fa fa-facebook"  style="font-size: 250%;"></i></a>
+                <a href="https://www.instagram.com/umarllee/"> <i class="fa fa-instagram"  style="font-size: 250%;"></i></a>
+                <a href="https://twitter.com/umarllee"> <i class="fa fa-twitter"  style="font-size: 250%;"></i></a>
+            </div>
+
+        </div>
+
+        
+    </main>
+
+
+</body>
+</html>
